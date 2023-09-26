@@ -6,7 +6,7 @@ let size3 = 0;
 let size4 = 0;
 
 function preload() {
-  img = loadImage("top_view_3.png");
+  img = loadImage("images/firstview_bg.png");
 }
 
 function setup() {

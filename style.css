@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header img {
+    width: 51px;
+}
+
+nav {
+    padding-right: 50px;
+}
+
+nav ul{
+   display: flex;
+   justify-content: flex-end;
+   gap: 100px;
+}
+
+nav li {
+    list-style: none;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FF7575;
+}
