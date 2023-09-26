@@ -10,7 +10,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1184, 568);
+  let firstview = createCanvas(1184, 568);
+  firstview.parent('firstview');
 }
 
 function draw() {
