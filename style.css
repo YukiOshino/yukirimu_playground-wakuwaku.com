@@ -718,6 +718,43 @@ footer a {
 }
 
 /* summer */
+.summer {
+    position: relative;
+}
+
+.summer .bg1 {
+   position: absolute;
+    z-index: -3;
+    top: 25%;
+    left: 10%;
+}
+
+.summer .bg2 {
+    position: absolute;
+    z-index: -3;
+    left: 0;
+}
+
+.summer .bg3 {
+    position: absolute;
+    z-index: -3;
+    right: -30px;
+    top: 55%;
+}
+
+.summer .bg4 {
+    position: absolute;
+    z-index: -3;
+    left: -40px;
+    bottom: 350px;
+}
+
+.summer .bg4 img {
+    width: 100%;
+}
+
+
+
 .summer .tag {
     background-image: url("images/tag.png");
     background-repeat: no-repeat;
@@ -809,7 +846,7 @@ footer a {
     width: 90%;
 }
 
-#sumidagawa .link, #campingGreen {
+#sumidagawa .link {
     margin: 30px 0 0 15% ;
 }
 
@@ -824,8 +861,9 @@ footer a {
 
 .ukiwa {
     position: absolute;
-    left: 0;
-    z-index: -1;
+    right: 0;
+    top: 55%;
+    z-index: -4;
 }
 
 #sarushima .link {
@@ -834,16 +872,66 @@ footer a {
 
 #campingGreen {
     padding-bottom: 200px;
-    position: relative;
+}
+
+#campingGreen h2{
+    margin-top: 0;
 }
 
 .tent {
     position: absolute;
-    bottom: -10px;
+    bottom: 330px;
 }
 
 
 /* autumn */
+.autumn {
+    position: relative;
+}
+
+.autumn .bg1 {
+    position: absolute;
+    z-index: -3;
+    top: 22%;
+    right: -70px;
+}
+
+.autumn .bg2 {
+    position: absolute;
+    z-index: -3;
+    top: 25%;
+    left: -20px;
+}
+
+.autumn .bg3 {
+    position: absolute;
+    z-index: -3;
+    right: -80px;
+    bottom: 0;
+}
+
+.autumn .bg4 {
+    position: absolute;
+    z-index: -3;
+    left: 0;
+}
+
+.autumn .bg3 img , .autumn .bg4 img{
+    transform: scale(-1,1);
+}
+
+.autumn .bg5 {
+    position: absolute;
+    z-index: -3;
+    left: 20%;
+}
+
+.pumpukin {
+    position: absolute;
+    bottom: 328px;
+    right: 10%;
+}
+
 .autumn .tag {
     background-image: url("images/tag2.png");
     background-repeat: no-repeat;
@@ -864,18 +952,22 @@ footer a {
 
 .ityou1 {
     position: absolute;
-    top: 0;
+    top: 30%;
 }
 
 .ityou2 {
     position: absolute;
+    z-index: -1;
+    right: 7%;
+    bottom: 0;
+    transform: scale(-1, -1);
 }
 
 .autumn .content {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    margin-right: 15%;
+    width: 80%;
 }
 
 .autumn .point1, .autumn .point2 {
@@ -911,18 +1003,33 @@ footer a {
     margin-right: 20%;
 }
 
+
+#meijijinguu {
+    position: relative;
+}
+
+#hakone {
+    position: relative;
+}
+
+#rental {
+    position: relative;
+}
+
 #rental .image1 {
     width: 80%;
 }
 
 .momizi1 {
     position: absolute;
+    right: 20%;
+    bottom: 0;
 }
 
 .momizi2 {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top:22%;
+    left: 10%;
 }
 
 #hakone .image2 {
@@ -975,9 +1082,9 @@ footer a {
     background-image: url("images/point_bg.png");
     background-repeat: no-repeat;
     width: 503px;
-    height: 384px;
     padding: 9%;
-    margin-left: 13%;
+
+    padding-top: 7%;
 }
 
 .winter .point1 .detail {
@@ -1005,7 +1112,13 @@ footer a {
 
 .winter .content {
     display: flex;
-    padding-right: 10%;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#kamakura .content {
+    flex-direction: row-reverse;
 }
 
 .winter .image1 {
@@ -1017,9 +1130,14 @@ footer a {
 }
 
 .winter .image2 {
-    width: 60%;
-    gap: 5px;
+    width: 54%;
+    gap: 1%;
     display: flex;
+    align-items: center;
+}
+
+.winter .point1 {
+    margin-bottom: 5px;
 }
 
 .winter .point2 span {
@@ -1032,7 +1150,6 @@ footer a {
 
 .winter .point2 {
     width: 503px;
-    padding: 0 7%;
     margin: 0 7% 0 7%;
 }
 
@@ -1047,4 +1164,10 @@ footer a {
 
 .winter .link {
     margin-top: 50px;
+}
+
+.winter .snowman {
+    width: 80px;
+    padding-top: 30px;
+    margin: 0 100px 0 auto;
 }
