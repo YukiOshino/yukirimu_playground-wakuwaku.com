@@ -1,11 +1,12 @@
 let snows = [];
 
 function preload() {
-  img = loadImage("winter3.png");
+  img = loadImage("images/winter.png");
 }
 
 function setup() {
-  createCanvas(1184, 617);
+  let winter_view = createCanvas(1184, 617);
+  winter_view.parent("winter_view")
     for(let i = 0; i < 5; i++) {
     snows[i] = new Circle();
   }

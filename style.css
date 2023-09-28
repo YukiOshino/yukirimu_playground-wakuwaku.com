@@ -1,3 +1,4 @@
+/* 共通 */
 * {
     margin: 0;
     padding: 0;
@@ -10,21 +11,54 @@ h1 {
     font-weight: bold;
     padding-bottom: 5px;
     line-height: 56px;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 h2 {
     font-size: 42px;
     text-align: center;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 p {
     font-size: 16px;
     line-height: 34px;
     letter-spacing: 0.1em;
+    font-family: 'Noto Sans JP', sans-serif;;
+}
+
+.spring header, .summer header, .autumn header, .winter header {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.spring nav, .summer nav, .autumn nav, .winter nav{
+    background-color: var(--nav-color);
+    width: 10%;
+    float: right;
+    text-align: center;
+    padding: 50px 0 0 0;
+}
+
+header img {
+    width: 51px;
+}
+
+.main_title {
+    width: fit-content;
+    position: relative;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 70px 0 0 80px;
+    margin-top: 100px;
 }
 
 .small_circle {
     position: absolute;
+    left: 0;
     width: 52px;
     height: 52px;
     background-color: var(--small-circle-color);
@@ -34,6 +68,8 @@ p {
 
 .big_circle {
     position: absolute;
+    top: 0;
+    left: 20px;
     width: 100px;
     height: 100px;
     background-color: var(--big-circle-color);
@@ -41,40 +77,128 @@ p {
     z-index: -2;
 }
 
-.index .small_circle {
+.link {
+    background-image: var(--link-img);
+    /* background-color: #FABE00; */
+    background-repeat: no-repeat;
+    width: 231px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+}
+
+.link a {
+    letter-spacing: 0.2em;
+    display: block;
+    align-self: center;
+}
+
+.link a img {
+    width: 18px;
+}
+
+/* 変数 */
+.index {
     --small-circle-color: #FABE00;
-}
-
-.index .big_circle {
     --big-circle-color: #FDFFA9;
+    --footer-color : #FDFFA9;
 }
 
-header img {
-    width: 51px;
+.spring {
+    --nav-color: #FFBCCC;
+    --small-circle-color: #FF7575;
+    --big-circle-color: #FFBCCC;
+    --link-img: url("images/spring_hp.png");
+    --footer-color: #FFBCCC;
 }
 
-nav {
+.summer {
+    --nav-color: #CEF9FF;
+    --small-circle-color: #89C3EB;
+    --big-circle-color: #CEF9FF;
+    --link-img: url("images/summer_hp.png");
+    --footer-color: #CEF9FF;
+}
+
+.autumn {
+    --nav-color: #CC8670;
+    --small-circle-color: #A80606;
+    --big-circle-color: #CC8670;
+    --link-img: url("images/autumn_hp.png");
+    --footer-color: #CC8670;
+}
+
+.winter {
+    --nav-color: #5468AD;
+    --small-circle-color: #5468AD;
+    --big-circle-color: #A0B5BC;
+    --link-img: url("images/winter_hp.png");
+    --footer-color: #A9B5BC;
+}
+
+
+
+/* 季節共通 */
+
+.season_title {
+    width: 50%;
+    position: absolute;
+    left: 5%;
+    top: 20px;
+}
+
+.caption {
+    position: absolute;
+    left: 13%;
+    bottom: 2%;
+}
+
+.chaption p {
+    font-size: 22px;
+    letter-spacing: 0.2em;
+    line-height: 46px;
+}
+
+.spring nav li, .summer nav li, .autumn nav li, .winter nav li {
+    padding-bottom: 50px;
+    text-decoration: none;
+}
+
+.spring a, .summer a, .autumn a, .winter a {
+    text-decoration: none;
+}
+
+
+/* index */
+
+.index nav {
     padding: 28px 50px 20px 0px;
 }
 
-nav ul{
+.index nav ul{
    display: flex;
    justify-content: flex-end;
    gap: 100px;
 }
 
-nav li {
+.index nav li {
     list-style: none;
     text-align: center;
 }
 
-nav a {
+.index nav a {
     text-decoration: none;
     color: #FF7575;
 }
 
 #firstview {
     text-align: right;
+}
+
+#spring_view, #summer_view, #autumn_view, #winter_view{
+    text-align: right;
+    padding-top: 115px;
+    margin-right: -10%;
 }
 
 .first_title {
@@ -94,16 +218,6 @@ nav a {
     position: relative;
 }
 
-#introduction .small_circle{
-    top: 80px;
-    left: 33px;
-}
-
-#introduction .big_circle{
-    top: 30px;
-    left: 60px;
-}
-
 .sub_title {
     padding-top: 100px;
     position: relative;
@@ -117,7 +231,7 @@ nav a {
     justify-content: center;
 }
 
-.contents {
+.index .contents {
     padding-top: 73px;
 }
 
@@ -228,16 +342,6 @@ nav a {
 
 #select .text p {
     padding-left: 100px;
-}
-
-#select .small_circle {
-    top: 110px;
-    left: 30px;
-}
-
-#select .big_circle {
-    top: 40px;
-    left: 40px;
 }
 
 #select .text {
@@ -365,7 +469,6 @@ nav a {
 
 footer {
     background-color: var(--footer-color);
-    
 }
 
 footer .contents {
@@ -374,19 +477,15 @@ footer .contents {
     padding: 80px 120px 0px 120px;
 }
 
-footer .content {
+.footer_content {
     width: 200px;
 }
 
-footer .content p {
+.footer_content p {
     border-top: 1px solid #414141;
     border-bottom: 1px solid #414141;
     text-align: center;
     margin-bottom: 18px;
-}
-
-.index footer {
-    --footer-color : #FDFFA9;
 }
 
 footer a {
@@ -397,12 +496,555 @@ footer a {
 
 .top_return {
     text-align: end;
+    padding-top: 45px;
 }
 
-.top_return {
-    padding-top: 45px;
+.top_return img {
+    width: 16px;
 }
 
 .copyright {
     text-align: center;
+}
+
+
+/* spring */
+.spring .bg1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.spring .bg2 {
+    position: absolute;
+    right: -60px;
+    top: 20%;
+    z-index: -3;
+}
+
+.spring .bg3 {
+    position: absolute;
+    bottom: 15%;
+    z-index: -3;
+}
+
+.spring .bg4 {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.spring .inside {
+    display: flex;
+    padding-top: 100px;
+    justify-content: start;
+}
+
+.spring .spot {
+    display: flex; 
+    align-items: center;
+    margin: 65px 0 0 0;
+}
+
+.spring .spot img{
+    width: 45px;
+    padding-right: 5px;
+    border-bottom: 5px solid #FF7575;
+}
+
+.spring .spot p {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 11px;
+    border-bottom: 5px solid #FF7575;
+}
+
+.spring .contents {
+    position: relative;
+}
+
+
+
+.spring .point , .spring .point2{
+    position: absolute;
+    overflow: visible;
+    top: 0;
+    left: 0;
+}
+
+.spring .point p, .spring .point2 p{
+    background-color: #fff;
+    padding: 10px;
+}
+
+.spring .point2 p {
+    background-color: #FFE8ED;
+    margin-left: 5px;
+}
+
+.spring .points {
+    width: 35%;
+    position: relative;
+}
+
+.spring .content {
+    border: 4px solid #FF7575;
+    padding: 60px 60px 30px 60px;
+}
+
+.spring .point p, .spring .point2 p{
+    font-size: 24px;
+}
+
+.spring .point span, .spring .point2 span{
+    font-size: 42px;
+}
+
+.spring .title p{
+    font-size: 24px;
+    padding-bottom: 13px;
+}
+
+.flower_pos {
+    position: relative;
+    padding-top: 80px;
+    width: fit-content;
+}
+
+#yoyogikouen .all_content , #atuginouen .all_content {
+    margin-left: 15%;
+}
+
+#yoyogikouen .contents {
+    position: relative;
+}
+
+#yoyogikouen .spot, #atuginouen .spot {
+    padding-left: 20px;
+}
+
+#yoyogikouen .inside, #atuginouen .inside {
+    flex-direction: row-reverse;
+}
+
+#yoyogikouen .points, #atuginouen .points {
+    padding-left: 20px;
+}
+
+#yoyogikouen .image, #atuginouen .image1, #atuginouen .image2 {
+    margin-left: -40px;
+    position: relative;
+}
+
+.flower1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#yoyogikouen .image img {
+    width: 90%;
+}
+
+#yoyogikouen .flower_pos {
+    padding-right: 150px;
+}
+
+#yoyogikouen .link {
+    margin-left: 20px;
+}
+
+.flower2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+}
+
+#syouwakinen {
+    position: relative;
+}
+
+#syouwakinen .all_content {
+    margin-right: 15%;
+}
+
+#syouwakinen .flower_pos {
+    margin: 0 0 0 auto;
+    padding-left: 250px;
+}
+
+#syouwakinen .spot {
+    justify-content: right;
+}
+
+#syouwakinen .inside {
+    justify-content: end;
+}
+
+#syouwakinen .image1 {
+    position: relative;
+}
+
+#syouwakinen .image2 {
+    margin-right: -90px;
+}
+
+.flower3 {
+    position: absolute;
+    z-index: -1;
+}
+
+.flower4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#atuginouen {
+    padding-bottom: 200px;
+}
+
+#atuginouen .image1 {
+    position: relative;
+}
+
+.strawberry {
+    position: absolute;
+    right: 2px;
+    top: 10px;
+    transform: rotate(10deg);
+}
+
+/* summer */
+.summer .tag {
+    background-image: url("images/tag.png");
+    background-repeat: no-repeat;
+    width: 255px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.tag p {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.summer .title {
+    display: flex;
+    align-items: end;
+}
+
+.summer .title p {
+    letter-spacing: 0.1em;
+    font-size: 24px;
+    line-height: 2;
+    width: 340px;
+    border-bottom: #414141 solid 2px;
+}
+
+.summer .title span {
+    display: inline-block;
+    border-bottom: #414141 solid 2px;
+    width: 340px;
+}
+
+
+.summer .title img {
+    width: var(--point-size);
+    --point-size: 110px;
+}
+
+.summer .detail {
+    padding: 16px 0 0 110px;
+    width: 340px;
+}
+
+.summer .contents {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#sarushima .contents {
+    flex-direction: row-reverse;
+}
+
+.hanabi {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hanabi img {
+    width: 218px;
+}
+
+#sumidagawa {
+    position: relative;
+}
+
+#sumidagawa .tag, #campingGreen .tag{
+    margin: 65px 15% 70px auto;
+}
+
+.summer .point1, .summer .point2{ 
+    width: 100%;
+}
+
+.summer .pictures {
+    width: 45%;
+}
+
+.summer .three_photos {
+    width: 100%;
+}
+
+.summer .two_photos {
+    width: 90%;
+}
+
+#sumidagawa .link, #campingGreen {
+    margin: 30px 0 0 15% ;
+}
+
+#sarushima .tag {
+    margin: 65px auto 70px 10%;
+}
+
+#sarushima .pictures {
+    position:relative;
+}
+
+
+.ukiwa {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+#sarushima .link {
+    margin: 30px 10% 0 auto ;
+}
+
+#campingGreen {
+    padding-bottom: 200px;
+    position: relative;
+}
+
+.tent {
+    position: absolute;
+    bottom: -10px;
+}
+
+
+/* autumn */
+.autumn .tag {
+    background-image: url("images/tag2.png");
+    background-repeat: no-repeat;
+    width: 257px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 0 20px;
+    margin: 42px 0 50px 20%;
+}
+
+.autumn .tag p {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.ityou1 {
+    position: absolute;
+    top: 0;
+}
+
+.ityou2 {
+    position: absolute;
+}
+
+.autumn .content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-right: 15%;
+}
+
+.autumn .point1, .autumn .point2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.autumn .image1 {
+    width: 60%;
+}
+
+.autumn .image2 {
+    width: 75%;
+}
+
+.autumn .title {
+    width: 60%;
+}
+
+.autumn .title p{
+    letter-spacing: 0.1em;
+    font-size: 24px;
+    line-height: 2;
+    width: 340px;
+    margin-bottom: 5px;
+}
+
+.autumn .detail {
+    width: 40%;
+    margin-top: -10%;
+    margin-right: 20%;
+}
+
+#rental .image1 {
+    width: 80%;
+}
+
+.momizi1 {
+    position: absolute;
+}
+
+.momizi2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#hakone .image2 {
+    position: relative;
+    padding-bottom:100px;
+}
+
+.autumn .link {
+    margin-left: 20%;
+}
+
+#rental .link {
+    padding-bottom: 200px;
+}
+
+/* winter */
+.winter nav li, .winter nav a {
+    color: #fff;
+}
+
+.winter .tag {
+    background-image: url("images/tag3.png");
+    background-repeat: no-repeat;
+    width: 252px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 0 20px;
+    margin: 42px 0 50px 15%;
+}
+
+#kamakura .tag {
+    margin: 42px 15% 50px auto;
+}
+
+.ornament1 {
+    position: absolute;
+}
+
+.ornament2 {
+    position: absolute;
+}
+
+.torii {
+    position: absolute;
+}
+
+.winter .point1 {
+    background-image: url("images/point_bg.png");
+    background-repeat: no-repeat;
+    width: 503px;
+    height: 384px;
+    padding: 9%;
+    margin-left: 13%;
+}
+
+.winter .point1 .detail {
+    width: 362px;
+}
+
+.winter .point1 p {
+    color: #fff;
+}
+
+.winter .title {
+    padding-bottom: 20px;
+    overflow: visible;
+}
+
+.winter .title p {
+    padding-top: 5px;
+    height: 50px;
+}
+
+.winter .point1 span {
+    color: #fff;
+    font-size: 42px;
+}
+
+.winter .content {
+    display: flex;
+    padding-right: 10%;
+}
+
+.winter .image1 {
+    width: 60%;
+}
+
+.winter .image1 img {
+    width: 100%;
+}
+
+.winter .image2 {
+    width: 60%;
+    gap: 5px;
+    display: flex;
+}
+
+.winter .point2 span {
+    font-size: 42px;
+}
+
+.winter .title p{
+    font-size: 22px;
+}
+
+.winter .point2 {
+    width: 503px;
+    padding: 0 7%;
+    margin: 0 7% 0 7%;
+}
+
+.winter .point2 .detail {
+    width: 440px;
+}
+
+.winter .two_images {
+    display: flex;
+    gap: 5px;
+}
+
+.winter .link {
+    margin-top: 50px;
 }

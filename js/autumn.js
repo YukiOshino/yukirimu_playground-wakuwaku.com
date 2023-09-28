@@ -7,11 +7,12 @@ let particles = [];
 
 
 function preload() {
-  img = loadImage("autumn.png");
+  img = loadImage("images/autumn.png");
 }
 
 function setup() {
-  createCanvas(1184, 617);
+  let autumn_view = createCanvas(1184, 617);
+  autumn_view.parent('autumn_view');
     
   for(let i = 0; i < circle_num; i++) {
     circles.push(new Circle());

@@ -2,14 +2,16 @@ let circles = [];
 let colorlist = [[255, 200], [137, 195, 235, 200]];
 
 function preload() {
-  img = loadImage("summer3.png");
+  img = loadImage("images/summer.png");
 }
 
 function setup() {
-  createCanvas(1184, 617);
+  let summer_view = createCanvas(1184, 617);
+  summer_view.parent('summer_view')
   for(let i = 0; i < 10; i++) {
     circles[i] = new Circle();
   }
+  console.log("k");
 }
 
 function draw() {

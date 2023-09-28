@@ -5,14 +5,16 @@ let angle = 0;
 let triangles = [];
 
 function preload() {
-  img = loadImage("spring2.png");
+  img = loadImage("images/spring2.png");
 }
 
 function setup() {
-  createCanvas(1184, 617);
+  let spring_view = createCanvas(1184, 617);
+  spring_view.parent('spring_view');
   for(let i = 0; i < 5; i++) {
     triangles[i] = new Triangle();
   }
+  console.log("f")
 }
 
 function draw() {
