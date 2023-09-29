@@ -1046,6 +1046,68 @@ footer a {
 }
 
 /* winter */
+.winter .bg1 {
+    position: absolute;
+    z-index: -3;
+    left: 10%;
+    top: 20%;   
+}
+
+.winter .bg2 {
+    position: absolute;
+    z-index: -3;
+    left: 0;
+    top: 25%;
+}
+
+.winter .bg3 {
+    position: absolute;
+    z-index: -3;
+    right: -60px;
+    top: 40%;
+}
+
+.winter .bg4 {
+    position: absolute;
+    z-index: -3;
+    left: 20%;
+    top: 25%;
+}
+
+.ornament1 {
+    position: absolute;
+    top: 0;
+    right: 5%;
+}
+
+.ornament2 {
+    position: absolute;
+    left: 8%;
+    top: 25%;
+}
+
+.torii {
+    position: absolute;
+    top: 17%;
+    left:15%;
+}
+
+#midtown {
+    position: relative;
+}
+
+#kamakura {
+    position: relative;
+}
+
+#titibu {
+    position: relative;
+}
+
+#titibu {
+    position: relative;
+}
+
 .winter nav li, .winter nav a {
     color: #fff;
 }
@@ -1066,14 +1128,6 @@ footer a {
     margin: 42px 15% 50px auto;
 }
 
-.ornament1 {
-    position: absolute;
-}
-
-.ornament2 {
-    position: absolute;
-}
-
 .torii {
     position: absolute;
 }
@@ -1084,7 +1138,7 @@ footer a {
     width: 503px;
     padding: 9%;
 
-    padding-top: 7%;
+    padding-top: 9%;
 }
 
 .winter .point1 .detail {
