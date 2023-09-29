@@ -79,7 +79,6 @@ header img {
 
 .link {
     background-image: var(--link-img);
-    /* background-color: #FABE00; */
     background-repeat: no-repeat;
     width: 231px;
     height: 44px;
@@ -95,6 +94,32 @@ header img {
 
 .link a img {
     width: 18px;
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .main_title {
+        padding: 20px 0 0 20px;
+    }
+
+    .small_circle {
+        width: 17px;
+        height: 17px;
+    }
+
+    .big_circle {
+        width: 32px;
+        height: 32px;
+        left: 5px;
+    }
 }
 
 /* 変数 */
@@ -136,7 +161,9 @@ header img {
     --footer-color: #A9B5BC;
 }
 
-
+@media (max-width: 400px) {
+    
+}
 
 /* 季節共通 */
 
@@ -213,9 +240,44 @@ header img {
     letter-spacing: 0.3em;
 }
 
+@media(max-width: 400px) {
+    .index nav {
+        display: none;
+    }
+
+    /* header {
+        position: relative;
+    } */
+
+    /* #firstview {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform:translate(50%, 50%);
+        text-align: left;
+        transform:rotate(-90deg)
+    } */
+
+    .first_title {
+        position: relative;
+        transform: translate(18px, -225px);
+    }
+
+    .first_title p{
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        line-height: 30px;
+    }
+}
+
 #introduction {
     padding: 224px 0 84px 0;
     position: relative;
+}
+
+
+#introduction .main_title {
+    width: 50%;
 }
 
 .sub_title {
@@ -228,6 +290,7 @@ header img {
 
 #introduction .contents {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -237,6 +300,7 @@ header img {
 
 .talk_content {
     background-image: url("images/hukidashi.png");
+    background-repeat: no-repeat;
     width: 286px;
     height: 66px;
     text-align: center;
@@ -263,10 +327,36 @@ header img {
     padding-top: 33px;
 }
 
+@media (max-width: 400px) {
+    .talk_content {
+        width: 200px;
+        background-size: contain;
+        padding-top: 5px;
+    }
+
+    #introduction .contents {
+        padding-top: 30px;
+    }
+
+    #introduction .text {
+        padding: 8% 8%;
+    }
+
+    #introduction .text h3 {
+        text-align: center;
+    }
+
+    .text p {
+        padding-top: 20px;
+    }
+}
+
 #merit {
     background-image: url("images/top_bg.png");
     padding: 220px 0;
     background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 #merit h3 {
@@ -275,9 +365,9 @@ header img {
 
 #merit .contents {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 150px;
     margin-right: 180px;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -321,6 +411,45 @@ header img {
     padding: 10px 0;
 }
 
+@media (max-width: 400px) {
+    #merit {
+        background-size: cover;
+    }
+    
+    .merit_title {
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .merit_title span {
+        display: inline-block;
+    }
+
+    #merit .contents {
+        margin: 0;
+    }
+
+    #merit .content_out {
+        padding: 10px;
+    }
+
+    #merit .detail {
+        height: auto;
+    }
+
+    #merit .content {
+        width: 160px;
+    }
+
+    #merit .number p {
+        font-size: 24px;
+        top: 20px;
+        left: 20px;
+    }
+
+}
+
 #select {
     padding-bottom: 200px;
 }
@@ -329,6 +458,7 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #select h2 {
@@ -350,6 +480,7 @@ header img {
 
 .season {
     width: 40%;
+    min-width: 300px;
 }
 
 .season1 {
@@ -420,8 +551,42 @@ header img {
     z-index: 3;
 }
 
+@media (max-width: 400px) {
+    #select {
+        padding-bottom: 100px;
+    }
+
+    #select .text {
+    width: 90%;
+    }
+
+    #select .main_title {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    #select h2 {
+        text-align: center;
+    }
+
+
+    .select_title span{
+        display: inline-block;
+    }
+
+    #select .text p {
+        padding: 20px 10px 40px 10px;
+    }
+
+    #select .season {
+        width: 95%;
+        justify-content: center;
+    }
+}
+
 .photos {
     display: flex;
+    flex-wrap: wrap;
     gap: 1%;
     position: relative;
     justify-content: center;
@@ -467,6 +632,36 @@ header img {
     transform: scale(-1, -1);
 }
 
+@media (max-width: 400px) {
+    .photos {
+        padding: 10%;
+        margin-bottom: 100px;
+    }
+
+    #photo .three_photos {
+        width: 100%
+    }
+
+    #photo img {
+        width: 100%;
+    }
+
+    #photo .two_photos {
+        padding-bottom: 10px;
+        gap: 10px;
+    }
+
+    .kakko_start {
+        top: 10px;
+        left: 10px;
+    }
+
+    .kakko_end {
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
 footer {
     background-color: var(--footer-color);
 }
@@ -475,6 +670,7 @@ footer .contents {
     display: flex;
     justify-content: space-between;
     padding: 80px 120px 0px 120px;
+    flex-wrap: wrap;
 }
 
 .footer_content {
@@ -507,6 +703,16 @@ footer a {
     text-align: center;
 }
 
+@media (max-width: 400px) {
+footer .contents {
+    padding: 0 7%;
+}
+
+    .footer_content {
+        width: 150px;
+    }
+}
+
 
 /* spring */
 .spring .bg1 {
@@ -515,7 +721,6 @@ footer a {
     left: 0;
     transform: translate(0, -50%);
 }
-
 .spring .bg2 {
     position: absolute;
     right: -60px;
@@ -539,6 +744,7 @@ footer a {
     display: flex;
     padding-top: 100px;
     justify-content: start;
+    flex-wrap: wrap;
 }
 
 .spring .spot {
@@ -563,8 +769,6 @@ footer a {
 .spring .contents {
     position: relative;
 }
-
-
 
 .spring .point , .spring .point2{
     position: absolute;
@@ -610,6 +814,50 @@ footer a {
     position: relative;
     padding-top: 80px;
     width: fit-content;
+}
+
+@media (max-width: 400px) {
+    .spring .bg1 {
+        visibility: none;
+    }
+
+    .spring .spot {
+        margin: 0;
+    }
+
+    .spring .spot p {
+        font-size: 18px;
+        padding-bottom: 4px;
+    }
+    
+    .spring .spot img {
+        width: 38px;
+    }
+
+    .spring .inside {
+        padding-top: 30px;
+    }
+
+    .spring .points {
+        width: 95%;
+    }
+
+    .spring .content {
+        padding: 50px 5px 30px 10px;
+    }
+
+    .spring .point p, .spring .point2 p{
+        font-size: 18px;
+    }
+    
+    .spring .point span, .spring .point2 span{
+        font-size: 22px;
+    }
+
+    .spring .point p, .spring .point2 p{
+        padding: 3px;
+    }
+
 }
 
 #yoyogikouen .all_content , #atuginouen .all_content {
@@ -662,6 +910,25 @@ footer a {
     width: 120px;
 }
 
+@media (max-width: 400px) {
+    #yoyogikouen .all_content , #atuginouen .all_content {
+        margin: 5%;
+    }
+    
+    #yoyogikouen .image, #atuginouen .image1, #atuginouen .image2 {
+        margin-left: 0;
+    }
+
+    #yoyogikouen .image img {
+        width: 100%;
+    }
+
+    #yoyogikouen .link {
+        width: 250px;
+        margin: 0 auto;
+    }
+}
+
 #syouwakinen {
     position: relative;
 }
@@ -702,6 +969,20 @@ footer a {
     left: 0;
 }
 
+@media (max-width: 400px) {
+    #syouwakinen .all_content {
+        margin: 5%;
+    }
+
+    #syouwakinen .image2 {
+        margin-right: 0px;
+    }
+
+    #syouwakinen .image1 img ,#syouwakinen .image2 img{
+        width: 100%;
+    }
+}
+
 #atuginouen {
     padding-bottom: 200px;
 }
@@ -715,6 +996,12 @@ footer a {
     right: 2px;
     top: 10px;
     transform: rotate(10deg);
+}
+
+@media (max-width: 400px) {
+    footer {
+        padding-top: 50px;
+    }
 }
 
 /* summer */
