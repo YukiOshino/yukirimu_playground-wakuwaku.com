@@ -1380,9 +1380,10 @@ footer a {
         width: 65px;
     }
 
-    /* .tent {
-        bottom: ;
-    } */
+    .tent {
+        bottom: 440px;
+        left: 10%;
+    } 
 
     .tent img {
         width: 60px;
@@ -1431,11 +1432,7 @@ footer a {
     left: 20%;
 }
 
-.pumpukin {
-    position: absolute;
-    bottom: 328px;
-    right: 10%;
-}
+
 
 .autumn .tag {
     background-image: url("images/tag2.png");
@@ -1550,6 +1547,126 @@ footer a {
     padding-bottom: 200px;
 }
 
+.pumpukin {
+    position: absolute;
+    bottom: 328px;
+    right: 10%;
+}
+
+.momizi3 {
+    display: none;
+}
+
+@media(max-width: 987px) {
+    .autumn .content {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 400px) {
+    .autumn .tag {
+        transform: scale(0.7);
+        margin: 20px 0;
+    }
+
+    .autumn .content {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .autumn .image1 {
+        width: 95%;
+        text-align: center;
+    }
+
+    .autumn .image1 img, .autumn .image2 img {
+        width: 100%;
+    }
+    
+    .autumn .image2 {
+        width: 95%;
+        padding-top: 30px;
+    }    
+
+    .autumn .title {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .autumn .title img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .autumn .title p{
+        font-size: 17px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .autumn .detail {
+        width:75%;
+        margin: -20% auto 0 0;
+    }
+
+    .autumn .point1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .autumn .point1, .autumn .point2 {
+        padding: 20px 10px;
+    }
+
+    #hakone .image2 {
+        padding-bottom: 0;
+    }
+
+    .ityou1 {
+        top: 12%;
+        right: 15%;
+        transform: rotate(-90deg)
+    }
+
+    .ityou1 img {
+        width: 70px;
+    }
+
+    .ityou2 {
+        bottom: 3%;
+        right: 5%;
+    }
+    .ityou2 img {
+        width: 120px;
+    }
+
+    .momizi1 {
+        top: 12%;
+        right: 15%;
+    }
+
+    .momizi2 {
+        display: none
+    }
+
+    .momizi3 {
+        display: inline;
+        position: absolute;
+        bottom: 5%;
+        right: 1%;
+    }
+
+
+    .momizi1 img {
+        width: 65px;
+        transform: rotate(30deg) scale(-1, 1);
+    }
+
+    .pumpukin {
+        bottom: 440px;
+    }
+}
+
 /* winter */
 .winter .bg1 {
     position: absolute;
@@ -1597,19 +1714,7 @@ footer a {
     left:15%;
 }
 
-#midtown {
-    position: relative;
-}
-
-#kamakura {
-    position: relative;
-}
-
-#titibu {
-    position: relative;
-}
-
-#titibu {
+#midtown, #kamakura, #titibu {
     position: relative;
 }
 
@@ -1631,10 +1736,6 @@ footer a {
 
 #kamakura .tag {
     margin: 42px 15% 50px auto;
-}
-
-.torii {
-    position: absolute;
 }
 
 .winter .point1 {
@@ -1729,4 +1830,128 @@ footer a {
     width: 80px;
     padding-top: 30px;
     margin: 0 100px 0 auto;
+}
+
+@media (max-width: 400px) {
+    .ornament1 {
+        top: 15%;
+        left: 10%;
+    }
+    
+    .ornament2 {
+        top: 36%;
+        left: 67%;
+    }
+
+    .ornament1 img, .ornament2 img{
+        width: 38px;
+    }
+
+    .torii {
+        left: 60%;
+        }
+
+    .torii img {
+        width: 73px;
+    }
+
+    .winter .snowman {
+        margin-right: 0;
+    }
+
+    .snowman img {
+        width: 45px;
+    }
+
+    .winter .tag {
+        transform: scale(0.7);
+        margin: 20px 0;
+    }
+
+    #kamakura .tag {
+        margin: 20px 0;
+    }
+
+    .winter .content {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .winter .point1 {
+        background-image: url("images/point_bg_sp.png");
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 0%;
+    }
+
+    .winter .point1 .title {
+        margin: 20px 55px 0 55px;
+    }
+
+    .winter .point1 .detail {
+        width: 250px;
+        margin: 0 20px 0 0;
+        padding-bottom: 0;
+    }
+
+    .winter .title p{
+        font-size: 18px;
+    }
+    .winter .point1 span {
+        color: #fff;
+        font-size: 22px;
+    }
+
+    .winter .title {
+        padding-bottom: 0;
+    }
+
+    .winter .point2 span {
+        font-size: 22px;
+        height: fit-content;
+    }
+    
+    .winter .point1 .detail {
+        padding: 0 30px 70px 30px;
+    }
+
+    .winter .image1 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .winter .point2 {
+        padding: 30px;
+        margin: 0;
+        display: contents;
+    }
+
+    .winter .point2 .title {
+        padding-top: 20px;
+    }
+
+    .winter .point2 .detail {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .winter .point2_set{
+        order: 1;
+    }
+
+    .winter .link {
+        margin: 20px auto;
+        order: 3;
+    }
+
+    .winter .image2 {
+        order: 2;
+    }
+
+    .winter .image2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
 }
