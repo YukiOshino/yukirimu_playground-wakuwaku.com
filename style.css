@@ -576,6 +576,7 @@ header {
 }
 
 #select {
+    margin-top: 100px;
     padding-bottom: 200px;
 }
 
@@ -584,6 +585,10 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+#select .main_title {
+    margin-top: 0;
 }
 
 #select h2 {
