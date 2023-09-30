@@ -851,7 +851,7 @@ footer a {
     z-index: -3;
 }
 
-.spring .bg4 {
+.spring .bg4 , .spring .bg4-2{
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -941,8 +941,8 @@ footer a {
     }
 
     .spring .bg1 {
-        top: 22%;
-        left: -50%;
+        top: 25%;
+        left: -3%;
         transform: rotate(-90deg) scale(1, 2);
     }
     .spring .bg1-2 {
@@ -951,6 +951,33 @@ footer a {
         display: inline;
         transform: rotate(-90deg) scale(1, 1.5);
         z-index: -1;
+    }
+
+    .spring .bg2 {
+        top:30%;
+    }
+
+    .spring .bg3 {
+        bottom: 0;
+        transform: scale(1, 0.7) translate(0%, 0);
+    }
+
+    .spring .bg4 {
+        top: 76%;
+        z-index: -3;
+    }
+
+    .spring .bg4-2 {
+        top: 86%;
+        z-index: -3;
+    }
+
+    #atuginouen .point2 p {
+        background-color: #fff;
+    }
+
+    #syouwakinen .point2 p {
+        background-color: #FFBCCC;
     }
 
     .spring .spot {
@@ -1044,10 +1071,6 @@ footer a {
 @media (max-width: 400px) {
     #yoyogikouen .all_content , #atuginouen .all_content {
         margin: 5%;
-    }
-
-    #yoyogikouen .point p {
-        background-color: #FFE8ED;
     }
 
     #yoyogikouen .point2 p {
