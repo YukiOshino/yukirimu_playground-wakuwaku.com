@@ -339,7 +339,7 @@ header {
 
     #spring_view , #summer_view, #autumn_view, #winter_view{
         width: 1184px;
-        height: 568px;
+        height: 600px;
         height: 100vh;
         overflow: hidden;
         position: relative;
