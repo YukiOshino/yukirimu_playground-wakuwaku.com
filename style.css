@@ -332,14 +332,14 @@ header {
 
     #firstview canvas {
         position: absolute;
-        bottom: 25%;
+        bottom: 15%;
         left: 0;
         transform: scale(0.7) rotate(-90deg) translate(100px, -98%);
     }
 
     #spring_view , #summer_view, #autumn_view, #winter_view{
         width: 1184px;
-        height: 600px;
+        height: 568px;
         height: 100vh;
         overflow: hidden;
         position: relative;
