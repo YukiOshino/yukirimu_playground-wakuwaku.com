@@ -1110,9 +1110,17 @@ footer a {
         right: 80%;
     }
 
-    .flower1 img {
+    .flower2 {
+        right: 0;
+        top: 38%;
+        z-index: -1;
+    }
+
+    .flower1 img, .flower2 img, .flower3 image{
         transform: scale(0.8);
     }
+
+    
 }
 
 #syouwakinen {
@@ -1160,6 +1168,10 @@ footer a {
         margin: 5%;
     }
 
+    #syouwakinen .spot {
+        justify-content: left;
+    }
+
     #syouwakinen .image2 {
         margin-right: 0px;
     }
@@ -1167,6 +1179,25 @@ footer a {
     #syouwakinen .image1 img ,#syouwakinen .image2 img{
         width: 100%;
     }
+
+    .flower3 img, .flower4 img {
+        transform: scale(0.7);
+    }
+
+    #syouwakinen .image1 {
+        position: static;
+    }
+
+    .flower3 {
+        right: 0;
+        top: 12%;
+    }
+
+    .flower4 {
+        top: 93%;
+        left: -5%;
+    }
+
 }
 
 #atuginouen {
@@ -1185,6 +1216,20 @@ footer a {
 }
 
 @media (max-width: 400px) {
+    #atuginouen .image1 {
+        position: static;
+    }
+
+    .strawberry img {
+        transform: scale(0.7);
+    }
+
+    .strawberry {
+        right: -15%;
+        top: 78%;
+        transform: rotate(-10deg);
+    }
+
     footer {
         padding-top: 50px;
     }
