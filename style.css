@@ -332,7 +332,7 @@ header {
 
     #firstview canvas {
         position: absolute;
-        top: 15%;
+        top: 8%;
         left: 0;
         transform: scale(0.7) rotate(-90deg) translate(100px, -98%);
     }
