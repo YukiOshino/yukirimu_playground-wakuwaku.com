@@ -128,6 +128,10 @@ header img {
     .spot p {
         font-size: 18px;
     }
+
+    header {
+        padding-top: 100px;
+    }
 }
 
 /* 変数 */
@@ -167,10 +171,6 @@ header img {
     --big-circle-color: #A0B5BC;
     --link-img: url("images/winter_hp.png");
     --footer-color: #A9B5BC;
-}
-
-@media (max-width: 400px) {
-    
 }
 
 /* 季節共通 */
@@ -975,6 +975,9 @@ footer a {
         padding: 3px;
     }
 
+    .spring .link {
+        margin: 20px auto;
+    }
 }
 
 #yoyogikouen .all_content , #atuginouen .all_content {
@@ -1042,7 +1045,7 @@ footer a {
 
     #yoyogikouen .link {
         width: 250px;
-        margin: 0 auto;
+        margin: 20px auto;
     }
 }
 
