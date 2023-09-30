@@ -35,10 +35,6 @@ a {
     font-family: 'Noto Sans JP', sans-serif;;
 }
 
-header {
-    height: 100vh;
-}
-
 .spring header, .summer header, .autumn header, .winter header {
     display: flex;
     width: 100%;
@@ -347,7 +343,7 @@ header {
 
     #spring_view canvas, #summer_view canvas, #autumn_view canvas, #winter_view canvas {
         position: absolute;
-        bottom: 25%;
+        bottom: 15%;
         left: 0;
         transform: scale(0.7) rotate(-90deg) translate(100px, -98%);
         z-index: -1;
@@ -391,7 +387,7 @@ header {
     }
 
     .caption {
-        bottom: 25%;
+        bottom: 35%;
         left: 6%;
     }
 
@@ -1079,8 +1075,8 @@ footer a {
 
 .flower2 {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 90%;
+    right: 70%;
     width: 120px;
 }
 
@@ -1152,6 +1148,10 @@ footer a {
     margin-right: -90px;
 }
 
+#syouwakinen .link {
+    margin: 0 16% 0 auto;
+}
+
 .flower3 {
     position: absolute;
     z-index: -1;
@@ -1159,8 +1159,8 @@ footer a {
 
 .flower4 {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 90%;
+    left: 92%;
 }
 
 @media (max-width: 400px) {
