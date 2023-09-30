@@ -828,11 +828,15 @@ footer a {
 
 
 /* spring */
-.spring .bg1 {
+.spring .bg1, .spring .bg1-2 {
     position: absolute;
     top: 50%;
     left: 0;
     transform: translate(0, -50%);
+}
+
+.spring .bg1-2{
+    display: none;
 }
 .spring .bg2 {
     position: absolute;
@@ -930,8 +934,20 @@ footer a {
 }
 
 @media (max-width: 400px) {
+
+
+    .spring .contents {
+        position: static;
+    }
+
     .spring .bg1 {
-        visibility: none;
+        top: 22%;
+        transform: rotate(-90deg) scale(1, 2);
+    }
+    .spring .bg1-2 {
+        top: 32%;
+        display: inline;
+        transform: rotate(-90deg) scale(1, 2);
     }
 
     .spring .spot {
@@ -980,10 +996,6 @@ footer a {
     margin-left: 15%;
 }
 
-#yoyogikouen .contents {
-    position: relative;
-}
-
 #yoyogikouen .spot, #atuginouen .spot {
     padding-left: 20px;
 }
@@ -1029,6 +1041,10 @@ footer a {
 @media (max-width: 400px) {
     #yoyogikouen .all_content , #atuginouen .all_content {
         margin: 5%;
+    }
+
+    #yoyogikouen .point p {
+        background-color: #FFE8ED;
     }
     
     #yoyogikouen .image, #atuginouen .image1, #atuginouen .image2 {
