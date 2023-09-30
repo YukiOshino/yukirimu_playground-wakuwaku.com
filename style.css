@@ -1582,8 +1582,6 @@ footer a {
     left: 20%;
 }
 
-
-
 .autumn .tag {
     background-image: url("images/tag2.png");
     background-repeat: no-repeat;
@@ -1707,6 +1705,10 @@ footer a {
     display: none;
 }
 
+.autumn .bg5-2 {
+    display: none;
+}
+
 @media(max-width: 987px) {
     .autumn .content {
         flex-wrap: wrap;
@@ -1714,9 +1716,44 @@ footer a {
 }
 
 @media (max-width: 400px) {
+
+    .autumn .bg1 {
+        top: 18%;
+        right: -40%;
+        transform: scale(0.6);
+    }
+
+    .autumn .bg2 {
+        top: 31%;
+    }
+
+    .autumn .bg3 {
+        transform: scale(-0.5, 0.35);
+        left: -50%;
+        top: -25%;
+    }
+
+    .autumn .bg4 {
+        transform: scale(-0.7, 0.7);
+        right: -50%;
+        top: 50%;
+    }
+
+    .autumn .bg5 {
+        top: 30%;
+        left: 10%;
+    }
+
+    .autumn .bg5-2 {
+        display: inline;
+        z-index: -3;
+        position: absolute;
+        top: 65%;
+    }
+    
     .autumn .tag {
         transform: scale(0.7);
-        margin: 20px 0;
+        margin: 5% 0;
     }
 
     .autumn .content {
@@ -1982,7 +2019,51 @@ footer a {
     margin: 0 100px 0 auto;
 }
 
+.winter .bg1-2, .winter .bg4-2 {
+    display: none;
+}
+
 @media (max-width: 400px) {
+    .winter .bg1 {
+        top: 15%;
+        right: -80%;
+    }
+
+    .winter .bg1-2 {
+        display: inline;
+        z-index: -3;
+        position: absolute;
+        top: 60%;
+        left: -50%;
+    }
+ 
+    .winter .bg2 {
+        top: 70%;
+        right: -40%;
+        transform: scale(-0.7, 0.4);
+    }
+
+    .winter .bg3 {
+        transform: scale(-0.7, 0.7);
+        top: 13%;
+        left: -40%;
+    }
+
+    .winter .bg4 {
+        left: -40%;
+        top: 17%;
+    }
+
+    .winter .bg4-2 {
+        position: absolute;
+        z-index: -3;
+        display: inline;
+        top: 55%;
+        right: -70%;
+        transform: scale(0.8);
+    }
+
+
     .ornament1 {
         top: 15%;
         left: 10%;
@@ -2007,10 +2088,12 @@ footer a {
 
     .winter .snowman {
         margin-right: 0;
+
     }
 
     .snowman img {
         width: 45px;
+        vertical-align: bottom;
     }
 
     .winter .tag {
