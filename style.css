@@ -128,10 +128,6 @@ header img {
     .spot p {
         font-size: 18px;
     }
-
-    header {
-        padding-top: 100px;
-    }
 }
 
 /* 変数 */
@@ -313,7 +309,7 @@ header {
     }
 
     #firstview {
-        height: 100vh;
+        height: 830px;
         overflow: hidden;
         position: relative;
     }
