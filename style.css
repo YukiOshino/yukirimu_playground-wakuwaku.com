@@ -324,8 +324,8 @@ header {
 
     #firstview {
         width: 1184px;
-        height: 650px;
-        height: 100vh;
+        height: 600px;
+        height: 110vh;
         overflow: hidden;
         position: relative;
     }
