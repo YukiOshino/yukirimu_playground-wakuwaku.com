@@ -403,7 +403,7 @@ header {
 
 
 #introduction .main_title {
-    width: 50%;
+    width: 80%;
 }
 
 .sub_title {
@@ -721,6 +721,7 @@ header {
     position: relative;
     justify-content: center;
     padding: 50px 0 ;
+    margin-bottom: 100px;
 }
 
 .three_photos {
@@ -1404,6 +1405,7 @@ footer a {
 .tent {
     position: absolute;
     bottom: 330px;
+    left: 10%;
 }
 
 .summer .bg1-2, .summer .bg2-2, .summer .bg2-3 {
