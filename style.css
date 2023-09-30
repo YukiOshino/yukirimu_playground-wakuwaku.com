@@ -143,6 +143,7 @@ header img {
     --small-circle-color: #FABE00;
     --big-circle-color: #FDFFA9;
     --footer-color : #FDFFA9;
+    --border-color: #FABE00;
 }
 
 .spring {
@@ -151,6 +152,7 @@ header img {
     --big-circle-color: #FFBCCC;
     --link-img: url("images/spring_hp.png");
     --footer-color: #FFBCCC;
+    --border-color: #FF7575;
 }
 
 .summer {
@@ -159,6 +161,8 @@ header img {
     --big-circle-color: #CEF9FF;
     --link-img: url("images/summer_hp.png");
     --footer-color: #CEF9FF;
+    --border-color: #89C3EB;
+
 }
 
 .autumn {
@@ -167,6 +171,8 @@ header img {
     --big-circle-color: #CC8670;
     --link-img: url("images/autumn_hp.png");
     --footer-color: #CC8670;
+    --border-color: #A80606;
+
 }
 
 .winter {
@@ -175,6 +181,7 @@ header img {
     --big-circle-color: #A0B5BC;
     --link-img: url("images/winter_hp.png");
     --footer-color: #A9B5BC;
+    --border-color: #5468AD;
 }
 
 /* 季節共通 */
@@ -274,8 +281,8 @@ header {
 
 .nav2 li {
     padding: 0 10px;
-    border-left: 1px #FABE00 solid;
-    border-right: 1px #FABE00 solid;
+    border-left: 2px var(--border-color) solid;
+    border-right: 2px  var(--border-color) solid;
 }
 
 .nav2 a {
