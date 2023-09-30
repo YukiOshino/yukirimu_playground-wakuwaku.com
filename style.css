@@ -254,7 +254,7 @@ header {
 .nav2 {
     display: none;
     position: absolute;
-    bottom: 14%;
+    bottom: 0%;
     width: 100%;
 }
 
@@ -950,7 +950,7 @@ footer a {
         right: -40%;
         display: inline;
         transform: rotate(-90deg) scale(1, 1.5);
-        z-index: -1;
+        z-index: -3;
     }
 
     .spring .bg2 {
@@ -1088,6 +1088,14 @@ footer a {
     #yoyogikouen .link {
         width: 250px;
         margin: 20px auto;
+    }
+
+    .flower1 {
+        right: 80%;
+    }
+
+    .flower1 img {
+        transform: scale(0.8);
     }
 }
 
