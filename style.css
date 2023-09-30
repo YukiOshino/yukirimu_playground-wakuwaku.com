@@ -1401,7 +1401,43 @@ footer a {
     bottom: 330px;
 }
 
+.summer .bg1-2, .summer .bg2-2, .summer .bg2-3 {
+    display: none;
+}
+
 @media (max-width: 400px) {
+    .summer .bg1 {
+        top: 22%;
+    }
+
+    .summer .bg1-2 {
+        display: inline;
+        position: absolute;
+        top: 70%;
+        left: 10%;
+        z-index: -3;
+    }
+
+    .summer .bg2-2 {
+        display: inline;
+        position: absolute;
+        z-index: -3;
+        bottom: 20%;
+    }
+
+    .summer .bg2-3 {
+        display: inline;
+        position: absolute;
+        z-index: -3;
+        bottom: 10%;
+        transform: scale(-1, 1);
+    }
+
+    .summer .bg4 {
+        display: none;
+    }
+
+
     .summer .tag {
         transform: scale(0.7);
     }
@@ -1485,7 +1521,7 @@ footer a {
     }
 
     .ukiwa {
-        top: 39.5%;
+        top: 42.5%;
         right: 10%;
         z-index: -1;
     }
