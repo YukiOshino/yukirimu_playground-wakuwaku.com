@@ -20,10 +20,18 @@ h2 {
     font-family: 'Gothic A1', sans-serif;
 }
 
+h3 {
+    font-family: 'Noto Sans JP', sans-serif;;
+}
+
 p {
     font-size: 16px;
     line-height: 34px;
     letter-spacing: 0.1em;
+    font-family: 'Noto Sans JP', sans-serif;;
+}
+
+a {
     font-family: 'Noto Sans JP', sans-serif;;
 }
 
@@ -236,7 +244,6 @@ header {
     padding-top: 115px;
     margin-right: -10%;
     overflow: hidden;
-
 }
 
 .first_title {
@@ -275,7 +282,7 @@ header {
     text-decoration: none;
 }
 
-@media (max-width: 995px) {
+/* @media (max-width: 995px) {
     h1 {
         font-size: 22px;
     }
@@ -289,9 +296,9 @@ header {
         height: 568px;
         transform: scale(0.6) translate(-50px, -50px);
     }
-}
+} */
 
-@media(max-width: 786px) {
+/* @media(max-width: 786px) {
     #firstview canvas {
         transform: scale(0.6) translate(-400px, -50px);
     }
@@ -301,7 +308,7 @@ header {
     #firstview canvas {
         transform: scale(0.4) translate(-700px, -50px);
     }
-}
+} */
 
 @media(max-width: 400px) {
     .nav2 {
@@ -309,7 +316,9 @@ header {
     }
 
     #firstview {
-        height: 830px;
+        width: 1184px;
+        height: 568px;
+        height: 100vh;
         overflow: hidden;
         position: relative;
     }
