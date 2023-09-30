@@ -1,9 +1,9 @@
-let count1 = 0;
-let angle = 0;
-let size1 = 0;
-let size2 = 0;
-let size3 = 0;
-let size4 = 0;
+let count1_sp = 0;
+let angle_sp = 0;
+let size1_sp = 0;
+let size2_sp = 0;
+let size3_sp = 0;
+let size4_sp = 0;
 
 function preload() {
   img = loadImage("images/firstview_bg_sp.png");
@@ -20,17 +20,17 @@ function draw() {
   
   fill(255, 188, 204);
   noStroke();
-  ellipse(335, 460, size1);
+  ellipse(335, 460, size1_sp);
   fill(206, 249, 255);
-  ellipse(230, 440, size2);
+  ellipse(230, 440, size2_sp);
   fill(204, 132, 112);
-  ellipse(340, 275, size3);
+  ellipse(340, 275, size3_sp);
   fill(169, 181, 188);
-  ellipse(90, 350, size4);
+  ellipse(90, 350, size4_sp);
   
-  size1 = 60 * cos(angle);
-  size2 = 50 * cos(angle + 30);
-  size3 = 45 * cos(angle + 60);
-  size4 = 40 * cos(angle +90);
-  angle += 0.01;
+  size1_sp = 60 * cos(angle_sp);
+  size2_sp = 50 * cos(angle_sp + 30);
+  size3_sp = 45 * cos(angle_sp + 60);
+  size4_sp = 40 * cos(angle_sp +90);
+  angle_Sp += 0.01;
 }

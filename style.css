@@ -27,6 +27,10 @@ p {
     font-family: 'Noto Sans JP', sans-serif;;
 }
 
+header {
+    height: 100vh;
+}
+
 .spring header, .summer header, .autumn header, .winter header {
     display: flex;
     width: 100%;
@@ -120,6 +124,10 @@ header img {
         height: 32px;
         left: 5px;
     }
+
+    .spot p {
+        font-size: 18px;
+    }
 }
 
 /* 変数 */
@@ -177,10 +185,11 @@ header img {
 .caption {
     position: absolute;
     left: 13%;
-    bottom: 2%;
+    bottom: 41%;
+    margin-bottom: -20%;
 }
 
-.chaption p {
+.caption p {
     font-size: 22px;
     letter-spacing: 0.2em;
     line-height: 46px;
@@ -222,16 +231,22 @@ header img {
     text-align: right;
 }
 
+header {
+    overflow: hidden;
+}
+
 #spring_view, #summer_view, #autumn_view, #winter_view{
     text-align: right;
     padding-top: 115px;
     margin-right: -10%;
+    overflow: hidden;
+
 }
 
 .first_title {
     position: absolute;
     letter-spacing: 0.3em;
-    transform: translate(140px, -230px);
+    transform: translate(30%, -95%);
 }
 
 .first_title p{
@@ -240,27 +255,121 @@ header img {
     letter-spacing: 0.3em;
 }
 
-@media(max-width: 400px) {
+.nav2 {
+    display: none;
+    position: absolute;
+    bottom: 14%;
+    width: 100%;
+}
+
+
+.nav2 ul {
+    display: flex;
+    gap: 15px; 
+    justify-content: center;   
+}
+
+.nav2 li {
+    padding: 0 10px;
+    border-left: 1px #FABE00 solid;
+    border-right: 1px #FABE00 solid;
+}
+
+.nav2 a {
+    text-decoration: none;
+}
+
+@media (max-width: 995px) {
+    h1 {
+        font-size: 22px;
+    }
+
     .index nav {
         display: none;
     }
 
-    /* header {
-        position: relative;
-    } */
+    #firstview canvas {
+        width: 1184px;
+        height: 568px;
+        transform: scale(0.6) translate(-50px, -50px);
+    }
+}
 
-    /* #firstview {
+@media(max-width: 786px) {
+    #firstview canvas {
+        transform: scale(0.6) translate(-400px, -50px);
+    }
+}
+
+@media(max-width: 582px) {
+    #firstview canvas {
+        transform: scale(0.4) translate(-700px, -50px);
+    }
+}
+
+@media(max-width: 400px) {
+    .nav2 {
+        display: inline;
+    }
+
+    #firstview {
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #firstview canvas {
         position: absolute;
-        top: 0;
+        bottom: 25%;
         left: 0;
-        transform:translate(50%, 50%);
-        text-align: left;
-        transform:rotate(-90deg)
-    } */
+        transform: scale(0.7) rotate(-90deg) translate(100px, -98%);
+    }
+
+    #spring_view , #summer_view, #autumn_view, #winter_view{
+        width: 1184px;
+        height: 568px;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #spring_view canvas, #summer_view canvas, #autumn_view canvas, #winter_view canvas {
+        position: absolute;
+        bottom: 25%;
+        left: 0;
+        transform: scale(0.7) rotate(-90deg) translate(100px, -98%);
+        z-index: -1;
+    }
+
+    .season_title {
+        width: 70%;
+        left: 50%;
+        transform: translate(-50% ,0);
+    }
+
+    .spring .season_title {
+        top: 30%;
+    }
+
+    .summer .season_title {
+        top: 50%;
+    }
+
+    .autumn .season_title {
+        top: 30%;
+    }
+
+    .winter .season_title {
+        top: 30%;
+    }
+
+    nav {
+        display: none;
+    }
 
     .first_title {
         position: relative;
-        transform: translate(18px, -225px);
+        transform: translate(18px, -395px);
     }
 
     .first_title p{
@@ -268,10 +377,19 @@ header img {
         letter-spacing: 0.1em;
         line-height: 30px;
     }
+
+    .caption {
+        bottom: 25%;
+        left: 6%;
+    }
+
+    .winter .caption p{
+        color: #fff;
+    } 
 }
 
 #introduction {
-    padding: 224px 0 84px 0;
+    padding: 0 0 84px 0;
     position: relative;
 }
 
@@ -281,7 +399,6 @@ header img {
 }
 
 .sub_title {
-    padding-top: 100px;
     position: relative;
     max-width: 900px;
     left: 50%;    
@@ -704,9 +821,9 @@ footer a {
 }
 
 @media (max-width: 400px) {
-footer .contents {
-    padding: 0 7%;
-}
+    footer .contents {
+        padding: 0 7%;
+    }
 
     .footer_content {
         width: 150px;
@@ -826,8 +943,8 @@ footer .contents {
     }
 
     .spring .spot p {
-        font-size: 18px;
         padding-bottom: 4px;
+        font-size: 18px;
     }
     
     .spring .spot img {
@@ -1077,7 +1194,6 @@ footer .contents {
     width: 340px;
 }
 
-
 .summer .title img {
     width: var(--point-size);
     --point-size: 110px;
@@ -1088,11 +1204,12 @@ footer .contents {
     width: 340px;
 }
 
-.summer .contents {
+#sumidagawa .contents , #sarushima .contents, #campingGreen .contents{
     display: flex;
-    gap: 50px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 #sarushima .contents {
@@ -1133,7 +1250,7 @@ footer .contents {
     width: 90%;
 }
 
-#sumidagawa .link {
+#sumidagawa .link, #campingGreen .link {
     margin: 30px 0 0 15% ;
 }
 
@@ -1170,6 +1287,107 @@ footer .contents {
     bottom: 330px;
 }
 
+@media (max-width: 400px) {
+    .summer .tag {
+        transform: scale(0.7);
+    }
+
+    #sumidagawa .tag, #sarushima .tag, #campingGreen .tag {
+        margin: 10px 0 0 0;
+    }
+
+    .summer .contain {
+        width: 100%;
+    }
+
+    .summer .title {
+        align-items: center;
+    }
+
+    .summer .title img {
+        transform: scale(0.8);
+    }
+
+    .summer .title p {
+        font-size: 18px;
+        width: 260px;
+    }
+
+    .summer .title span {
+        width: 260px;
+    }
+
+    .summer .contain {
+        display: contents;
+    }
+
+    .summer .pictures {
+         display: contents;
+    }
+
+    .summer .point1 {
+        order: 1;
+    }
+
+    .summer  .photo1{
+        order: 2;
+    }
+
+    .summer .point2 {
+        order: 3;
+    }
+
+    .summer .three_photos {
+        display: contents;
+    }
+
+    .summer .two_photos {
+        order: 4;
+    }
+
+    .summer .point1 .detail {
+        margin-top: -20px;
+    }
+
+    .summer .detail {
+        padding-right: 10px;
+        width: auto;
+    }
+
+    #sumidagawa .link , #campingGreen .link{
+        margin: 20px auto;
+    }
+
+    #sarushima .link {
+        margin: 20px auto;
+    }
+
+    .hanabi {
+        top: 3%;
+        right: 10%;
+    }
+    .hanabi img{
+        width: 60px;
+    }
+
+    .ukiwa {
+        top: 39.5%;
+        right: 10%;
+        z-index: -1;
+    }
+
+    .ukiwa img{
+        width: 65px;
+    }
+
+    /* .tent {
+        bottom: ;
+    } */
+
+    .tent img {
+        width: 60px;
+    }
+}
 
 /* autumn */
 .autumn {
