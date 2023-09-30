@@ -324,7 +324,7 @@ header {
 
     #firstview {
         width: 1184px;
-        height: 600px;
+        height: 650px;
         height: 100vh;
         overflow: hidden;
         position: relative;
@@ -332,7 +332,7 @@ header {
 
     #firstview canvas {
         position: absolute;
-        bottom: 15%;
+        bottom: 20%;
         left: 0;
         transform: scale(0.7) rotate(-90deg) translate(100px, -98%);
     }
